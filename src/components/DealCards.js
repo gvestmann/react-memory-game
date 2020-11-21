@@ -1,3 +1,5 @@
+import React from "react"
+
 function randomizeCards(data) {
     const newData = data.slice(0)
     for(let i = 0; i < data.length - 1; i++) {
