@@ -1,12 +1,17 @@
+/* BASIC ELEMENTS */
+
 body {
     margin: 0;
     font-family: 'Oldenburg', cursive;
-    text-transform: uppercase;
+
+    background-color: #EAEAEA;
 }
 
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -16,23 +21,53 @@ footer {
 
 h1 {
     font-size: 50px;
+    color: #D45E68;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: -1rem;
+    text-transform: uppercase;
+    color: #444
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 1em;
+    }
+}
+
+a {
+    color: #E22424;
 }
 
 img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 7px 34px -6px rgba(0,0,0,0.62);
     -webkit-box-shadow: 2px 7px 34px -6px rgba(0,0,0,0.62);
     -moz-box-shadow: 2px 7px 34px -6px rgba(0,0,0,0.62);
 }
+
+
+/* SITE'S CONTAINER */
 
 .container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     width: 100%
-
 }
+
+
+/* GAME BOARD */
 
 .table__container {
     display: flex;
@@ -49,34 +84,39 @@ img {
     width: 80%
 }
 
+@media only screen and (max-width: 1360px) {
+    .table {
+      width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .table {
+      width: 100%;
+    }
+}
+
+
+/* SINGLE CARDS */
+
 .card__container {
     margin: 1rem;
     width: 15rem;
     height: 15rem;
 }
 
-.card__container.card__face-up .card__turn-over {
-    transform: rotateY(180deg)
-}
-.card__turn-over{
-    transform-style: preserve-3d;
-    position: relative;
-}
+@media only screen and (max-width: 1090px) {
+    .card__container {
+        margin: 1rem;
+        width: 12rem;
+        height: 12rem;
+    }
+  }
 
-.card__front-side,
-.card__back-side {
-    backface-visibility: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-
-}
-
-.card__back-side {
-    z-index: 2;
-    transform: rotateY(0deg);
-
-}
-.card__front-side {
-    transform: rotateY(180deg)
+@media only screen and (max-width: 470px) {
+    .card__container {
+        margin: 1rem;
+        width: 8rem;
+        height: 8rem;
+    }
 }

@@ -1,8 +1,10 @@
+// Import of must-have React stuff + My app
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
+// Here our site/app is rendered. All stuff is included in APP, so it's not a lot!
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -10,7 +12,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// I don't really know what this is, but it has something to do with performance, and deleting it gives me a fatal error
 reportWebVitals();
