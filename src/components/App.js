@@ -5,7 +5,6 @@ import Header from "./Header"
 import CardBoard from "./CardBoard"
 import dealCards from "./DealCards"
 import Footer from "./Footer"
-import "./style.css"
 
 
 // The app's function - this all will be exported to Index.js which then sews this together
