@@ -4,7 +4,7 @@ import Card from "./Card"
 
 function CardBoard ({cards, turnedOver, clickHandler}) {
     return  (
-        <div className="card-table">
+        <div className="table">
             {cards.map((card) => (
                 <Card 
                 name={card.name}

@@ -4,7 +4,9 @@ import dealCards from "./DealCards"
 
 function App() {
   const [cards, startCards] = useState([])
-  const [turnedOver, startTurnedOver] = useState([])
+  const [turnedOver, setTurnedOver] = useState([])
+  const [matchCard, setMatchCard] = useState([])
+  const [freezeBoard, setFreezeBoard] = useState(false)
 
   useEffect(() => {
     startCards(dealCards())
@@ -14,8 +16,12 @@ function App() {
 
   return (
     <div>
-      <h2>Memory!</h2>
-      <CardBoard cards={cards} turnedOver={turnedOver} clickHandler={clickHandler} />
+      <h1>React to memory</h1>
+      <div className="container">
+        <div className="table__container">
+          <CardBoard cards={cards} turnedOver={turnedOver} clickHandler={clickHandler} />
+        </div>
+      </div>
     </div>
   );
 }

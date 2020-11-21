@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 
 function Card({clickHandler, id, turnedOver, name}) {
     return (
-    <div className={`flip-container ${turnedOver ? 'flipped' : ''}`}  onClick={() => clickHandler(id)}>
+    <div className={`card__container ${turnedOver ? 'card__face-up' : ''}`}  onClick={() => clickHandler(id)}>
 
-        <div className="flipper">
-            <img className={turnedOver? 'front' : 'back'} src={turnedOver ? `img/${name}.png` : `img/back-side.png`}/>
+        <div className="card__turn-over">
+            <img className={turnedOver? 'card__front-side' : 'card__back-side'} src={turnedOver ? `img/${name}.png` : `https://raw.githubusercontent.com/gvestmann/react-memory-game/main/src/img/back-side.png`}/>
         </div>
 
     </div>
