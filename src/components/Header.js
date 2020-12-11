@@ -6,8 +6,8 @@ function Header() {
     // Function returns JSX-code
     return (
         <header>
-            <h1>REACT TO MEMORY</h1>
-            <h2>Children's game for adults</h2>
+            <h1>NEVER FORGET!</h1>
+            <h2>MEMORY GAME BUILT WITH REACT</h2>
         </header>
     )
 }

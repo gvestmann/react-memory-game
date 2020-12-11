@@ -3,7 +3,6 @@
 body {
     margin: 0;
     font-family: 'Oldenburg', cursive;
-
     background-color: #EAEAEA;
 }
 
@@ -17,12 +16,16 @@ header {
 footer {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
     font-size: 50px;
     color: #D45E68;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
